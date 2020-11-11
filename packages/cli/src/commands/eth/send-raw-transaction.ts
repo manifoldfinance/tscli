@@ -1,5 +1,5 @@
 import {Command, flags} from '@oclif/command';
-// import {Swirl} from '@tscli/core';
+// import {tscli} from '@tscli/core';
 
 export default class SendRawTransaction extends Command {
   static description = 'describe the command here'

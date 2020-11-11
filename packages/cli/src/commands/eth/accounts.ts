@@ -1,5 +1,5 @@
 import {Command, flags} from '@oclif/command';
-import {Swirl} from '@tscli/core';
+import {tscli} from '@tscli/core';
 import {Config} from '../../utils/config';
 
 export default class Accounts extends Command {
@@ -27,7 +27,7 @@ Array of DATA, 20 Bytes - addresses owned by the client.
   async run() {
     // const {args, flags} = this.parse(EthAccounts);
     const {host, port} = Config.current();
-    const rpc = new Swirl(host, port);
+    const rpc = new tscli(host, port);
     // eslint-disable-next-line no-console
     console.log(await rpc.eth.accounts());
   }
