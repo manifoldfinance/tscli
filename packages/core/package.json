@@ -1,0 +1,27 @@
+{
+  "name": "@tscli/core",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "license": "MIT",
+  "repository": "manifoldfinance/tscli",
+  "homepage": "https://github.com/manifoldfinance/tscli",
+  "bugs": "https://github.com/manifoldfinance/tscli/issues",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "build": "yarn run rmDist && yarn run compile",
+    "rmDist": "rm -rf ./dist",
+    "clean": "rm -rf ./node_modules ./dist",
+    "compile": "tsc -p tsconfig.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/ws": "^7.2.3",
+    "got": "^10.7.0",
+    "ws": "^7.2.3"
+  }
+}

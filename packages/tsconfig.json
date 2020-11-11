@@ -1,0 +1,8 @@
+{
+  "extends": "../tsconfig.root.json",
+  "files": [],
+  "references": [
+    { "path": "cli" },
+    { "path": "core" }
+  ]
+}
