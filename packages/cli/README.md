@@ -1,12 +1,7 @@
-tscli
+@manifold/tscli
 =====
 
-JSONRPC utility
-
-[![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/tscli.svg)](https://npmjs.org/package/tscli)
-[![Downloads/week](https://img.shields.io/npm/dw/tscli.svg)](https://npmjs.org/package/tscli)
-[![License](https://img.shields.io/npm/l/tscli.svg)](https://github.com/manifoldfinance/tscli/blob/master/package.json)
+> Command Line Utility
 
 <!-- toc -->
 * [Usage](#usage)
