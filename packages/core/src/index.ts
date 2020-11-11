@@ -1,7 +1,7 @@
 import {ETH, SHH, WEB3, DB, NET} from './flavors/ethereum';
 import RPC, {Provider} from './rpc';
 
-export class Swirl {
+export class tscli {
   provider!: Provider;
 
   eth!: ETH;

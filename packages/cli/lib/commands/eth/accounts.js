@@ -64,7 +64,7 @@ var Accounts = /** @class */ (function (_super) {
                 switch (_d.label) {
                     case 0:
                         _a = config_1.Config.current(), host = _a.host, port = _a.port;
-                        rpc = new core_1.Swirl(host, port);
+                        rpc = new core_1.tscli(host, port);
                         // eslint-disable-next-line no-console
                         _c = (_b = console).log;
                         return [4 /*yield*/, rpc.eth.accounts()];
