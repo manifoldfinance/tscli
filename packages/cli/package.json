@@ -1,8 +1,7 @@
 {
   "name": "@tscli/cli",
-  "description": "JSONRPC utility",
+  "description": "@manifoldfinance command line utility",
   "version": "0.0.0",
-  "author": "Nicholas J. Paterno @nicholasjpaterno",
   "bin": {
     "tscli": "./bin/run"
   },
