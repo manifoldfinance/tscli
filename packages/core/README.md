@@ -1,3 +1,10 @@
-# Swirl core
+# @manifold/cli-core
 
-JSON RPC helper
+> JSON RPCv2 
+
+## Usage
+
+
+## License 
+
+MIT
