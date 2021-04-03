@@ -1,42 +1,42 @@
 export interface BaseRpcResponse {
-  id: number
-  jsonrpc: '2.0'
+  id: number;
+  jsonrpc: '2.0';
 }
 
 export interface RPCSuccess extends BaseRpcResponse {
-  result: string | boolean
+  result: string | boolean;
 }
 
 export interface RPCError extends BaseRpcResponse {
-  error: string
+  error: string;
 }
 
-export type RPCResponse = RPCSuccess | RPCError
+export type RPCResponse = RPCSuccess | RPCError;
 
-export type RPCTAG = 'latest' | 'earliest' | 'pending'
+export type RPCTAG = 'latest' | 'earliest' | 'pending';
 
 export interface Filter {
-  fromBlock: number | RPCTAG // QUANTITY|TAG - (optional, default: "latest") Integer block number, or "latest" for the last mined block or "pending", "earliest" for not yet mined transactions.
-  toBlock: number | RPCTAG // QUANTITY|TAG - (optional, default: "latest") Integer block number, or "latest" for the last mined block or "pending", "earliest" for not yet mined transactions.
-  address: string | string[] // DATA|Array, 20 Bytes - (optional) Contract address or a list of addresses from which logs should originate.
-  topics: string[] // Array of DATA, - (optional) Array of 32 Bytes DATA topics. Topics are order-dependent. Each topic can also be an array of DATA with "or" options.
+  fromBlock: number | RPCTAG; // QUANTITY|TAG - (optional, default: "latest") Integer block number, or "latest" for the last mined block or "pending", "earliest" for not yet mined transactions.
+  toBlock: number | RPCTAG; // QUANTITY|TAG - (optional, default: "latest") Integer block number, or "latest" for the last mined block or "pending", "earliest" for not yet mined transactions.
+  address: string | string[]; // DATA|Array, 20 Bytes - (optional) Contract address or a list of addresses from which logs should originate.
+  topics: string[]; // Array of DATA, - (optional) Array of 32 Bytes DATA topics. Topics are order-dependent. Each topic can also be an array of DATA with "or" options.
 }
 
 export interface Log extends Filter {
-  blockhash: string // DATA, 32 Bytes - (optional) With the addition of EIP-234 (Geth >= v1.8.13 or Parity >= v2.1.0), blockHash is a new filter option which restricts the logs returned to the single block with the 32-byte hash blockHash. Using blockHash is equivalent to fromBlock = toBlock = the block number with hash blockHash. If blockHash is present in the filter criteria, then neither fromBlock nor toBlock are allowed.
+  blockhash: string; // DATA, 32 Bytes - (optional) With the addition of EIP-234 (Geth >= v1.8.13 or Parity >= v2.1.0), blockHash is a new filter option which restricts the logs returned to the single block with the 32-byte hash blockHash. Using blockHash is equivalent to fromBlock = toBlock = the block number with hash blockHash. If blockHash is present in the filter criteria, then neither fromBlock nor toBlock are allowed.
 }
 
 export interface Call {
-  from?: string // DATA, 20 Bytes - (optional) The address the transaction is sent from.
-  to?: string // DATA, 20 Bytes - The address the transaction is directed to.
-  gas?: string // QUANTITY - (optional) Integer of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
-  gasPrice?: string // QUANTITY - (optional) Integer of the gasPrice used for each paid gas
-  value?: string // QUANTITY - (optional) Integer of the value sent with this transaction
-  data?: string // DATA - (optional) Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI in the Solidity documentation
+  from?: string; // DATA, 20 Bytes - (optional) The address the transaction is sent from.
+  to?: string; // DATA, 20 Bytes - The address the transaction is directed to.
+  gas?: string; // QUANTITY - (optional) Integer of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
+  gasPrice?: string; // QUANTITY - (optional) Integer of the gasPrice used for each paid gas
+  value?: string; // QUANTITY - (optional) Integer of the value sent with this transaction
+  data?: string; // DATA - (optional) Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI in the Solidity documentation
 }
 
 export interface Transaction extends Call {
-  nonce?: number // QUANTITY - (optional) Integer of a nonce. This allows to overwrite your own pending transactions that use the same nonce.
+  nonce?: number; // QUANTITY - (optional) Integer of a nonce. This allows to overwrite your own pending transactions that use the same nonce.
 }
 
 export type JSON_RPC_METHOD =
@@ -103,4 +103,4 @@ export type JSON_RPC_METHOD =
   | 'shh_uninstallFilter'
   | 'shh_version'
   | 'web3_clientVersion'
-  | 'web3_sha3'
+  | 'web3_sha3';

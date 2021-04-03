@@ -5,3 +5,6 @@ dist
 results
 .nyc_output
 *.tsbuildinfo
+packages/**/lib
+build/
+coverage/

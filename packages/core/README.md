@@ -1,10 +1,9 @@
 # @manifold/cli-core
 
-> JSON RPCv2 
+> JSON RPCv2
 
 ## Usage
 
-
-## License 
+## License
 
 MIT
