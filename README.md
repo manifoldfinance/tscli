@@ -22,6 +22,31 @@ version: draft
 
 > typescript command line interface
 
+### Install
+
+```bash
+npm i -g @tscli/cli
+```
+
+### Overview
+```bash
+$ tscli
+@manifoldfinance command line utility
+
+VERSION
+  @tscli/cli/0.0.0 darwin-x64 node-v12.20.2
+
+USAGE
+  $ tscli [COMMAND]
+
+COMMANDS
+  autocomplete  display autocomplete installation instructions
+  eth           Ethereum JSONRPC Methods
+  help          display help for tscli
+  plugins       list installed plugins
+  repl          Interactive REPL
+```
+
 ### License
 
 SPDX-License-Idnetifier: MIT
