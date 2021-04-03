@@ -1,0 +1,444 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@tscli/cli</title>
+	<meta name="description" content="Documentation for @tscli/cli">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@tscli/cli</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1>@tscli/cli</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<a href="#manifoldtscli" id="manifoldtscli" style="color: inherit; text-decoration: none;">
+					<h1>@manifold/tscli</h1>
+				</a>
+				<blockquote>
+					<p>Command Line Utility</p>
+				</blockquote>
+				<!-- toc -->
+				<ul>
+					<li><a href="#manifoldtscli">@manifold/tscli</a></li>
+					<li><a href="#usage">Usage</a></li>
+					<li><a href="#commands">Commands</a><!-- tocstop -->
+					</li>
+				</ul>
+				<a href="#usage" id="usage" style="color: inherit; text-decoration: none;">
+					<h1>Usage</h1>
+				</a>
+				<!-- usage -->
+				<pre><code class="language-sh-session">$ npm install -g @tscli/cli
+$ tscli COMMAND
+running command...
+$ tscli (-v|--version|version)
+@tscli/cli/0.0.0 darwin-x64 node-v12.20.2
+$ tscli --help [COMMAND]
+USAGE
+  $ tscli COMMAND
+...
+</code></pre>
+				<!-- usagestop -->
+				<a href="#commands" id="commands" style="color: inherit; text-decoration: none;">
+					<h1>Commands</h1>
+				</a>
+				<!-- commands -->
+				<ul>
+					<li><a href="#tscli-autocomplete-shell"><code>tscli autocomplete [SHELL]</code></a></li>
+					<li><a href="#tscli-ethaccounts"><code>tscli eth:accounts</code></a></li>
+					<li><a href="#tscli-ethsend-raw-transaction-file"><code>tscli eth:send-raw-transaction [FILE]</code></a></li>
+					<li><a href="#tscli-ethsend-transaction-file"><code>tscli eth:send-transaction [FILE]</code></a></li>
+					<li><a href="#tscli-help-command"><code>tscli help [COMMAND]</code></a></li>
+					<li><a href="#tscli-plugins"><code>tscli plugins</code></a></li>
+					<li><a href="#tscli-pluginsinspect-plugin"><code>tscli plugins:inspect PLUGIN...</code></a></li>
+					<li><a href="#tscli-pluginsinstall-plugin"><code>tscli plugins:install PLUGIN...</code></a></li>
+					<li><a href="#tscli-pluginslink-plugin"><code>tscli plugins:link PLUGIN</code></a></li>
+					<li><a href="#tscli-pluginsuninstall-plugin"><code>tscli plugins:uninstall PLUGIN...</code></a></li>
+					<li><a href="#tscli-pluginsupdate"><code>tscli plugins:update</code></a></li>
+					<li><a href="#tscli-repl-provider"><code>tscli repl [PROVIDER]</code></a></li>
+				</ul>
+				<a href="#tscli-autocomplete-shell" id="tscli-autocomplete-shell" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli autocomplete [SHELL]</code></h2>
+				</a>
+				<p>display autocomplete installation instructions</p>
+				<pre><code><span class="hljs-keyword">display </span>autocomplete <span class="hljs-keyword">installation </span><span class="hljs-keyword">instructions
+</span>
+USAGE
+  $ tscli autocomplete [<span class="hljs-keyword">SHELL]
+</span>
+ARGUMENTS
+  <span class="hljs-keyword">SHELL </span> <span class="hljs-keyword">shell </span>type
+
+OPTIONS
+  -r, --refresh-<span class="hljs-keyword">cache </span> Refresh <span class="hljs-keyword">cache </span>(ignores <span class="hljs-keyword">displaying </span><span class="hljs-keyword">instructions)
+</span>
+EXAMPLES
+  $ tscli autocomplete
+  $ tscli autocomplete <span class="hljs-keyword">bash
+</span>  $ tscli autocomplete zsh
+  $ tscli autocomplete --refresh-<span class="hljs-keyword">cache</span>
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-autocomplete/blob/v0.1.5/src/commands/autocomplete/index.ts">@oclif/plugin-autocomplete</a></em></p>
+				<a href="#tscli-ethaccounts" id="tscli-ethaccounts" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli eth:accounts</code></h2>
+				</a>
+				<p>Returns a list of addresses owned by client.</p>
+				<pre><code><span class="hljs-keyword">Returns</span> a list <span class="hljs-keyword">of</span> addresses <span class="hljs-keyword">owned</span> <span class="hljs-keyword">by</span> client.
+
+Parameters: <span class="hljs-keyword">none</span>
+
+<span class="hljs-keyword">Returns</span>
+<span class="hljs-keyword">Array</span> <span class="hljs-keyword">of</span> DATA, <span class="hljs-number">20</span> Bytes - addresses <span class="hljs-keyword">owned</span> <span class="hljs-keyword">by</span> the client.
+
+
+<span class="hljs-keyword">USAGE</span>
+  $ tscli eth:accounts
+
+<span class="hljs-keyword">OPTIONS</span>
+  -h, <span class="hljs-comment">--help  show CLI help</span>
+
+DESCRIPTION
+  Parameters: <span class="hljs-keyword">none</span>
+
+  <span class="hljs-keyword">Returns</span>
+  <span class="hljs-keyword">Array</span> <span class="hljs-keyword">of</span> DATA, <span class="hljs-number">20</span> Bytes - addresses <span class="hljs-keyword">owned</span> <span class="hljs-keyword">by</span> the client.
+
+ALIASES
+  $ tscli eth_accounts
+  $ tscli ethAccounts
+
+EXAMPLE
+  $ tscli eth_accounts
+  {
+     &quot;id&quot;:<span class="hljs-number">1</span>,
+     &quot;jsonrpc&quot;: &quot;2.0&quot;,
+     &quot;result&quot;: [&quot;0xc94770007dda54cF92009BFF0dE90c06F603a09f&quot;]
+  }
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/manifoldfinance/tscli/blob/v0.0.0/src/commands/eth/accounts.ts">src/commands/eth/accounts.ts</a></em></p>
+				<a href="#tscli-ethsend-raw-transaction-file" id="tscli-ethsend-raw-transaction-file" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli eth:send-raw-transaction [FILE]</code></h2>
+				</a>
+				<p>describe the command here</p>
+				<pre><code>describe <span class="hljs-keyword">the</span> <span class="hljs-keyword">command</span> <span class="hljs-title">here</span>
+
+USAGE
+  $ tscli eth:<span class="hljs-built_in">send</span>-raw-transaction [FILE]
+
+OPTIONS
+  -f, <span class="hljs-comment">--force</span>
+  -h, <span class="hljs-comment">--help       show CLI help</span>
+  -n, <span class="hljs-comment">--name=name  name to print</span>
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/manifoldfinance/tscli/blob/v0.0.0/src/commands/eth/send-raw-transaction.ts">src/commands/eth/send-raw-transaction.ts</a></em></p>
+				<a href="#tscli-ethsend-transaction-file" id="tscli-ethsend-transaction-file" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli eth:send-transaction [FILE]</code></h2>
+				</a>
+				<p>describe the command here</p>
+				<pre><code>describe <span class="hljs-keyword">the</span> <span class="hljs-keyword">command</span> <span class="hljs-title">here</span>
+
+USAGE
+  $ tscli eth:<span class="hljs-built_in">send</span>-transaction [FILE]
+
+OPTIONS
+  -f, <span class="hljs-comment">--force</span>
+  -h, <span class="hljs-comment">--help       show CLI help</span>
+  -n, <span class="hljs-comment">--name=name  (required) name to print</span>
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/manifoldfinance/tscli/blob/v0.0.0/src/commands/eth/send-transaction.ts">src/commands/eth/send-transaction.ts</a></em></p>
+				<a href="#tscli-help-command" id="tscli-help-command" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli help [COMMAND]</code></h2>
+				</a>
+				<p>display help for tscli</p>
+				<pre><code><span class="hljs-keyword">display</span> <span class="hljs-keyword">help</span> <span class="hljs-keyword">for</span> &lt;%= config.bin %&gt;
+
+USAGE
+  $ tscli <span class="hljs-keyword">help</span> [COMMAND]
+
+ARGUMENTS
+  COMMAND  <span class="hljs-keyword">command</span> <span class="hljs-keyword">to</span> show <span class="hljs-keyword">help</span> <span class="hljs-keyword">for</span>
+
+OPTIONS
+  --<span class="hljs-keyword">all</span>  see <span class="hljs-keyword">all</span> commands in CLI
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-help/blob/v2.2.3/src/commands/help.ts">@oclif/plugin-help</a></em></p>
+				<a href="#tscli-plugins" id="tscli-plugins" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli plugins</code></h2>
+				</a>
+				<p>list installed plugins</p>
+				<pre><code>list installed plugins
+
+USAGE
+  <span class="hljs-symbol">$</span> tscli plugins
+
+<span class="hljs-keyword">OPTIONS</span>
+  --core  show core plugins
+
+EXAMPLE
+  <span class="hljs-symbol">$</span> tscli plugins
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/index.ts">@oclif/plugin-plugins</a></em></p>
+				<a href="#tscli-pluginsinspect-plugin" id="tscli-pluginsinspect-plugin" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli plugins:inspect PLUGIN...</code></h2>
+				</a>
+				<p>displays installation properties of a plugin</p>
+				<pre><code>displays installation properties of a <span class="hljs-keyword">plugin</span>
+
+USAGE
+  $ tscli plugins:<span class="hljs-keyword">inspect</span> <span class="hljs-keyword">PLUGIN</span>...
+
+ARGUMENTS
+  <span class="hljs-keyword">PLUGIN</span>  [default: .] <span class="hljs-keyword">plugin</span> to <span class="hljs-keyword">inspect</span>
+
+OPTIONS
+  -<span class="hljs-keyword">h</span>, --<span class="hljs-keyword">help</span>     show <span class="hljs-keyword">CLI</span> <span class="hljs-keyword">help</span>
+  -v, --verbose
+
+EXAMPLE
+  $ tscli plugins:<span class="hljs-keyword">inspect</span> myplugin
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/inspect.ts">@oclif/plugin-plugins</a></em></p>
+				<a href="#tscli-pluginsinstall-plugin" id="tscli-pluginsinstall-plugin" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli plugins:install PLUGIN...</code></h2>
+				</a>
+				<p>installs a plugin into the CLI</p>
+				<pre><code>installs <span class="hljs-keyword">a</span> plugin <span class="hljs-keyword">into</span> <span class="hljs-keyword">the</span> CLI
+Can be installed <span class="hljs-built_in">from</span> npm <span class="hljs-keyword">or</span> <span class="hljs-keyword">a</span> git url.
+
+Installation <span class="hljs-keyword">of</span> <span class="hljs-keyword">a</span> user-installed plugin will override <span class="hljs-keyword">a</span> core plugin.
+
+e.g. If you have <span class="hljs-keyword">a</span> core plugin that has <span class="hljs-keyword">a</span> <span class="hljs-string">&#x27;hello&#x27;</span> <span class="hljs-keyword">command</span>, <span class="hljs-title">installing</span> <span class="hljs-title">a</span> <span class="hljs-title">user-installed</span> <span class="hljs-title">plugin</span> <span class="hljs-title">with</span> <span class="hljs-title">a</span> <span class="hljs-string">&#x27;hello&#x27;</span> <span class="hljs-title">command</span> <span class="hljs-title">will</span> <span class="hljs-title">override</span> <span class="hljs-title">the</span> <span class="hljs-title">core</span> <span class="hljs-title">plugin</span> <span class="hljs-title">implementation</span>. <span class="hljs-title">This</span> <span class="hljs-title">is</span> <span class="hljs-title">useful</span> <span class="hljs-title">if</span> <span class="hljs-title">a</span> <span class="hljs-title">user</span> <span class="hljs-title">needs</span> <span class="hljs-title">to</span> <span class="hljs-title">update</span> <span class="hljs-title">core</span> <span class="hljs-title">plugin</span> <span class="hljs-title">functionality</span> <span class="hljs-title">in</span> <span class="hljs-title">the</span> <span class="hljs-title">CLI</span> <span class="hljs-title">without</span> <span class="hljs-title">the</span> <span class="hljs-title">need</span> <span class="hljs-title">to</span> <span class="hljs-title">patch</span> <span class="hljs-title">and</span> <span class="hljs-title">update</span> <span class="hljs-title">the</span> <span class="hljs-title">whole</span> <span class="hljs-title">CLI</span>.
+
+
+USAGE
+  $ tscli plugins:install PLUGIN...
+
+ARGUMENTS
+  PLUGIN  plugin <span class="hljs-built_in">to</span> install
+
+OPTIONS
+  -f, <span class="hljs-comment">--force    yarn install with force flag</span>
+  -h, <span class="hljs-comment">--help     show CLI help</span>
+  -v, <span class="hljs-comment">--verbose</span>
+
+DESCRIPTION
+  Can be installed <span class="hljs-built_in">from</span> npm <span class="hljs-keyword">or</span> <span class="hljs-keyword">a</span> git url.
+
+  Installation <span class="hljs-keyword">of</span> <span class="hljs-keyword">a</span> user-installed plugin will override <span class="hljs-keyword">a</span> core plugin.
+
+  e.g. If you have <span class="hljs-keyword">a</span> core plugin that has <span class="hljs-keyword">a</span> <span class="hljs-string">&#x27;hello&#x27;</span> <span class="hljs-keyword">command</span>, <span class="hljs-title">installing</span> <span class="hljs-title">a</span> <span class="hljs-title">user-installed</span> <span class="hljs-title">plugin</span> <span class="hljs-title">with</span> <span class="hljs-title">a</span> <span class="hljs-string">&#x27;hello&#x27;</span> <span class="hljs-title">command</span>
+  will override <span class="hljs-keyword">the</span> core plugin implementation. This is useful <span class="hljs-keyword">if</span> <span class="hljs-keyword">a</span> user needs <span class="hljs-built_in">to</span> update core plugin functionality <span class="hljs-keyword">in</span>
+  <span class="hljs-keyword">the</span> CLI <span class="hljs-keyword">without</span> <span class="hljs-keyword">the</span> need <span class="hljs-built_in">to</span> patch <span class="hljs-keyword">and</span> update <span class="hljs-keyword">the</span> <span class="hljs-keyword">whole</span> CLI.
+
+ALIASES
+  $ tscli plugins:<span class="hljs-built_in">add</span>
+
+EXAMPLES
+  $ tscli plugins:install myplugin
+  $ tscli plugins:install <span class="hljs-keyword">https</span>://github.com/someuser/someplugin
+  $ tscli plugins:install someuser/someplugin
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/install.ts">@oclif/plugin-plugins</a></em></p>
+				<a href="#tscli-pluginslink-plugin" id="tscli-pluginslink-plugin" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli plugins:link PLUGIN</code></h2>
+				</a>
+				<p>links a plugin into the CLI for development</p>
+				<pre><code>links a plugin <span class="hljs-keyword">into</span> the CLI <span class="hljs-keyword">for</span> development
+Installation <span class="hljs-keyword">of</span> a linked plugin will override a <span class="hljs-keyword">user</span>-installed <span class="hljs-keyword">or</span> core plugin.
+
+e.g. <span class="hljs-keyword">If</span> you have a <span class="hljs-keyword">user</span>-installed <span class="hljs-keyword">or</span> core plugin that has a <span class="hljs-string">&#x27;hello&#x27;</span> command, installing a linked plugin <span class="hljs-keyword">with</span> a <span class="hljs-string">&#x27;hello&#x27;</span> command will override the <span class="hljs-keyword">user</span>-installed <span class="hljs-keyword">or</span> core plugin implementation. This <span class="hljs-keyword">is</span> useful <span class="hljs-keyword">for</span> development <span class="hljs-keyword">work</span>.
+
+
+<span class="hljs-keyword">USAGE</span>
+  $ tscli plugins:link PLUGIN
+
+ARGUMENTS
+  <span class="hljs-type">PATH</span>  [<span class="hljs-keyword">default</span>: .] <span class="hljs-type">path</span> <span class="hljs-keyword">to</span> plugin
+
+<span class="hljs-keyword">OPTIONS</span>
+  -h, <span class="hljs-comment">--help     show CLI help</span>
+  -v, <span class="hljs-comment">--verbose</span>
+
+DESCRIPTION
+  Installation <span class="hljs-keyword">of</span> a linked plugin will override a <span class="hljs-keyword">user</span>-installed <span class="hljs-keyword">or</span> core plugin.
+
+  e.g. <span class="hljs-keyword">If</span> you have a <span class="hljs-keyword">user</span>-installed <span class="hljs-keyword">or</span> core plugin that has a <span class="hljs-string">&#x27;hello&#x27;</span> command, installing a linked plugin <span class="hljs-keyword">with</span> a <span class="hljs-string">&#x27;hello&#x27;</span>
+  command will override the <span class="hljs-keyword">user</span>-installed <span class="hljs-keyword">or</span> core plugin implementation. This <span class="hljs-keyword">is</span> useful <span class="hljs-keyword">for</span> development <span class="hljs-keyword">work</span>.
+
+EXAMPLE
+  $ tscli plugins:link myplugin
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/link.ts">@oclif/plugin-plugins</a></em></p>
+				<a href="#tscli-pluginsuninstall-plugin" id="tscli-pluginsuninstall-plugin" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli plugins:uninstall PLUGIN...</code></h2>
+				</a>
+				<p>removes a plugin from the CLI</p>
+				<pre><code>removes a <span class="hljs-keyword">plugin</span> from the <span class="hljs-keyword">CLI</span>
+
+USAGE
+  $ tscli plugins:uninstall <span class="hljs-keyword">PLUGIN</span>...
+
+ARGUMENTS
+  <span class="hljs-keyword">PLUGIN</span>  <span class="hljs-keyword">plugin</span> to uninstall
+
+OPTIONS
+  -<span class="hljs-keyword">h</span>, --<span class="hljs-keyword">help</span>     show <span class="hljs-keyword">CLI</span> <span class="hljs-keyword">help</span>
+  -v, --verbose
+
+ALIASES
+  $ tscli plugins:unlink
+  $ tscli plugins:remove
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/uninstall.ts">@oclif/plugin-plugins</a></em></p>
+				<a href="#tscli-pluginsupdate" id="tscli-pluginsupdate" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli plugins:update</code></h2>
+				</a>
+				<p>update installed plugins</p>
+				<pre><code><span class="hljs-keyword">update</span> installed plugins
+
+<span class="hljs-keyword">USAGE</span>
+  $ tscli plugins:<span class="hljs-keyword">update</span>
+
+<span class="hljs-keyword">OPTIONS</span>
+  -h, <span class="hljs-comment">--help     show CLI help</span>
+  -v, <span class="hljs-comment">--verbose</span>
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/oclif/plugin-plugins/blob/v1.10.0/src/commands/plugins/update.ts">@oclif/plugin-plugins</a></em></p>
+				<a href="#tscli-repl-provider" id="tscli-repl-provider" style="color: inherit; text-decoration: none;">
+					<h2><code>tscli repl [PROVIDER]</code></h2>
+				</a>
+				<p>Interactive REPL</p>
+				<pre><code>Interactive REPL
+
+USAGE
+  $ tscli repl [PROVIDER]
+
+ARGUMENTS
+  PROVIDER  Provider address.  <span class="hljs-keyword">Ex</span>: http:<span class="hljs-comment">//localhost:8545</span>
+
+OPTIONS
+  -<span class="hljs-keyword">h</span>, --<span class="hljs-keyword">help</span>               show <span class="hljs-keyword">CLI</span> <span class="hljs-keyword">help</span>
+  -p, --provider=provider  Provider address.  <span class="hljs-keyword">Ex</span>: http:<span class="hljs-comment">//localhost:8545</span>
+</code></pre>
+				<p><em>See code:
+				<a href="https://github.com/manifoldfinance/tscli/blob/v0.0.0/src/commands/repl.ts">src/commands/repl.ts</a></em></p>
+				<!-- commandsstop -->
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_packages_cli_src_commands_eth_accounts_.html">&quot;packages/cli/src/commands/eth/accounts&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_packages_cli_src_commands_eth_send_raw_transaction_.html">&quot;packages/cli/src/commands/eth/send-<wbr>raw-<wbr>transaction&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_packages_cli_src_commands_eth_send_transaction_.html">&quot;packages/cli/src/commands/eth/send-<wbr>transaction&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_packages_cli_src_commands_repl_.html">&quot;packages/cli/src/commands/repl&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_packages_cli_src_index_.html">&quot;packages/cli/src/index&quot;</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/_packages_cli_src_utils_config_.html">&quot;packages/cli/src/utils/config&quot;</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

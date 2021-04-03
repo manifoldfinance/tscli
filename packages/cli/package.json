@@ -36,6 +36,8 @@
     "mocha": "^5",
     "nyc": "^14",
     "ts-node": "^8",
+    "typedoc": "^0.18.0",
+    "typedoc-neo-theme": "^1.1.0",
     "typescript": "^3.3"
   },
   "engines": {
