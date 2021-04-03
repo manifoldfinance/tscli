@@ -4,18 +4,18 @@ description: a cli tool for working with deployments and the SDK
 version: draft
 ---
 
-<!-- START pkgtoc, keep to allow update -->
+
 
 **@tscli**
 
 > command line client
+> 
 
-| Package                           | Description                           |
-| :-------------------------------- | :------------------------------------ |
-| **[@tscli/cli](packages/cli/)**   | @manifoldfinance command line utility |
-| **[@tscli/core](packages/core/)** | core command line library             |
 
-<!-- END pkgtoc, keep to allow update -->
+![](/.github/workflows/demo.gif)
+
+
+
 
 
 ### `tscli`
@@ -46,6 +46,18 @@ COMMANDS
   plugins       list installed plugins
   repl          Interactive REPL
 ```
+
+### Distribution Information
+
+<!-- START pkgtoc, keep to allow update -->
+
+| Package                           | Description                           |
+| :-------------------------------- | :------------------------------------ |
+| **[@tscli/cli](packages/cli/)**   | @manifoldfinance command line utility |
+| **[@tscli/core](packages/core/)** | core command line library             |
+
+<!-- END pkgtoc, keep to allow update -->
+
 
 ### License
 
