@@ -1,16 +1,3 @@
----
-title: a command line interface
-description: a cli tool for working with deployments and the SDK
-version: draft
----
-
-
-
-**@tscli**
-
-> command line client
-> 
-
 
 ![](/.github/workflows/demo.gif)
 
@@ -18,9 +5,9 @@ version: draft
 
 
 
-### `tscli`
+### **@tscli**
 
-> typescript command line interface
+> command line client
 
 ### Install
 
