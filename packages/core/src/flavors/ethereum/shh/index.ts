@@ -1,27 +1,27 @@
-import {hex} from '../../../utils'
-import {Provider} from '../../../rpc'
+import { hex } from '../../../utils';
+import { Provider } from '../../../rpc';
 
 export default class SHH {
-  connection: Provider
+  connection: Provider;
 
   constructor(connection: Provider) {
-    this.connection = connection
+    this.connection = connection;
   }
 
   async shh_addToGroup(identity: string) {
-    return this.connection.rpc.send('shh_addToGroup', hex(identity))
+    return this.connection.rpc.send('shh_addToGroup', hex(identity));
   }
 
   async shh_getFilterChanges(filterID: number) {
-    return this.connection.rpc.send('shh_getFilterChanges', hex(filterID))
+    return this.connection.rpc.send('shh_getFilterChanges', hex(filterID));
   }
 
   async shh_getMessages(filterID: number) {
-    return this.connection.rpc.send('shh_getMessages', hex(filterID))
+    return this.connection.rpc.send('shh_getMessages', hex(filterID));
   }
 
   async hasIdentity(identity: string) {
-    return this.connection.rpc.send('shh_hasIdentity', hex(identity))
+    return this.connection.rpc.send('shh_hasIdentity', hex(identity));
   }
 
   // async shh_newFilter() {
@@ -29,11 +29,11 @@ export default class SHH {
   // }
 
   async newGroup() {
-    return this.connection.rpc.send('shh_newGroup')
+    return this.connection.rpc.send('shh_newGroup');
   }
 
   async newIdentity() {
-    return this.connection.rpc.send('shh_newIdentity')
+    return this.connection.rpc.send('shh_newIdentity');
   }
 
   // async shh_post() {
@@ -41,10 +41,10 @@ export default class SHH {
   // }
 
   async uninstallFilter(filterID: number) {
-    return this.connection.rpc.send('shh_uninstallFilter', hex(filterID))
+    return this.connection.rpc.send('shh_uninstallFilter', hex(filterID));
   }
 
   async version() {
-    return this.connection.rpc.send('shh_version')
+    return this.connection.rpc.send('shh_version');
   }
 }

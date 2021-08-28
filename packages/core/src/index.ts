@@ -1,36 +1,36 @@
-import {ETH, SHH, WEB3, DB, NET} from './flavors/ethereum'
-import RPC, {Provider} from './rpc'
+import { ETH, SHH, WEB3, DB, NET } from './flavors/ethereum';
+import RPC, { Provider } from './rpc';
 
 export class tscli {
-  provider!: Provider
+  provider!: Provider;
 
-  eth!: ETH
+  eth!: ETH;
 
-  shh!: SHH
+  shh!: SHH;
 
-  web3!: WEB3
+  web3!: WEB3;
 
-  db!: DB
+  db!: DB;
 
-  net!: NET
+  net!: NET;
 
   constructor(host = 'http://0.0.0.0', port = 8545) {
-    this.connection(host, port)
-    this.enableEthereum()
+    this.connection(host, port);
+    this.enableEthereum();
   }
 
   connection(host: string, port: number) {
     this.provider = {
-      rpc: new RPC(host, port)
-    }
-    return this.provider
+      rpc: new RPC(host, port),
+    };
+    return this.provider;
   }
 
   enableEthereum() {
-    this.shh = new SHH(this.provider)
-    this.eth = new ETH(this.provider)
-    this.web3 = new WEB3(this.provider)
-    this.db = new DB(this.provider)
-    this.net = new NET(this.provider)
+    this.shh = new SHH(this.provider);
+    this.eth = new ETH(this.provider);
+    this.web3 = new WEB3(this.provider);
+    this.db = new DB(this.provider);
+    this.net = new NET(this.provider);
   }
 }

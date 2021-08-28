@@ -1,0 +1,12 @@
+.DS_Store
+node_modules
+yarn-error.log
+*.log
+*.tar.gz
+*.tgz
+*.zip
+lib/
+tsconfig.tsbuildinfo
+coverage/
+.nyc*
+*.html
